@@ -6,7 +6,7 @@ body{
 header{
     margin: 50px 140px;
 }
-p{
+p,span{
     font-family: sans-serif;
 }
 /* top banner */
@@ -171,8 +171,6 @@ p{
 }
 .social-icon{
     color:rgba(245, 245, 245, 0.711);
-    font-size: 25px;
-    margin-top: 10px;
 }
 #tab-button{
     color: white;
@@ -193,8 +191,62 @@ p{
 /*============= media query ============*/
 
 /* for mobiles */
+@media only screen and (max-width:688px) {
+    header {
+        margin: 20px;
+    }
 
+    .header-container {
+        flex-direction: column;
+    }
 
+    .greatest-show h1 {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .player-pic img {
+        margin-right: 35px;
+        margin-left: 50px;
+        height: 300px;
+        margin-bottom: 0%;
+    }
+
+    /* main media query */
+    .blogs-container {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 45px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+        height: 50%;
+        margin-bottom: 30px;
+        margin-left: 19%;
+        margin-right: 20%;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .footer-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* upcoming matches html parts style for tab */
+    .matches{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .flags{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+}
 
 
 
@@ -213,6 +265,8 @@ p{
         margin-right: 17px;
         height: 340px;
     }
+    
+    /* main-media query */
     .blogs-container{
         flex-direction: column;
         margin-left: 50px;
